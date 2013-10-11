@@ -27,11 +27,17 @@ instead of
     dns2.iwelt-ag.net.
     dns.iwelt-ag.net.
 
+---
+
     $ dig +short frd.mn @dns3.iwelt-ag.de.
     82.196.7.61
 
+---
+
     $ dig +short frd.mn @dns2.iwelt-ag.net.
     82.196.7.61
+
+---
     
     $ dig +short frd.mn @dns.iwelt-ag.net.
     82.196.7.61
