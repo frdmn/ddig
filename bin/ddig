@@ -1,0 +1,64 @@
+#!/bin/bash
+# Copyright (C) 2013 Jonas Friedmann under the "Do What The Fuck You Want To Public" License 
+# (see ./LICENSE for more informations)
+
+#####
+# Settings / variables
+#####
+
+hostname=${1}
+i=1
+
+#####
+# DO NOT EDIT BELOW
+#####
+
+# Usage function
+usage(){
+	echo "Usage: $0 <hostname>"
+	echo ""
+	echo "options:"
+    echo "-h 	show this help"
+	exit 1
+}
+
+# Get all passed arguments
+OPTIND=1
+while getopts "h?" opt; do
+    case "$opt" in
+        h|\?)
+            usage
+            ;;
+    esac
+done
+shift $((OPTIND-1))
+
+# Check if argument is given
+if [ -z "${hostname}" ]
+then
+	echo "Error: no argument given!"
+	usage
+fi
+
+# Find responsible DNS
+dns=$(dig ns +short ${hostname})
+
+# Check for empty response
+if [ -z "${dns}" ]
+then
+	echo "Error: Couldn't resolve hostname!"
+fi
+
+# For each resulted server 
+for server in ${dns}
+do
+	echo "$i. responsible DNS:   ${server}"
+    
+    # Lookup PTR
+    direct=$(dig ${hostname} +short @${server})
+	
+    echo "   resolved hostname: $direct"
+
+	# Count
+	i=$((i+1))
+done
