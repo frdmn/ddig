@@ -1,7 +1,7 @@
 Direct dig (ddig)
 ===================
 
-Simple bash script to query the actual responsible DNS server of a specific domain/hostname.
+Simple bash script to query each actual responsible DNS server for a specific domain/hostname.
 
 # Installation
 
