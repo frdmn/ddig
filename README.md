@@ -19,3 +19,19 @@ Simple bash script to query each actual responsible DNS server for a specific do
        resolved hostname: 82.196.7.61
     3. responsible DNS:   dns3.iwelt-ag.de.
        resolved hostname: 82.196.7.61    
+
+instead of
+
+    $ dig +short ns frd.mn
+    dns3.iwelt-ag.de.
+    dns2.iwelt-ag.net.
+    dns.iwelt-ag.net.
+
+    $ dig +short frd.mn @dns3.iwelt-ag.de.
+    82.196.7.61
+
+    $ dig +short frd.mn @dns2.iwelt-ag.net.
+    82.196.7.61
+    
+    $ dig +short frd.mn @dns.iwelt-ag.net.
+    82.196.7.61
