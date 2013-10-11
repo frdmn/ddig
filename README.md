@@ -6,7 +6,7 @@ Simple bash script to query each actual responsible DNS server for a specific do
 # Installation
 
     cd /tmp
-    git clone https://github.com/frdmn/direect-dig.git
+    git clone git://github.com/frdmn/direct-dig.git
     sudo mv direct-dig/bin/ddig /usr/bin/ddig
     sudo chmod +x /usr/bin/ddig
 
