@@ -12,7 +12,7 @@ Simple bash script to query each actual responsible DNS server for a specific do
 
 # Usage
 
-    $ bin/ddig frd.mn
+    $ ddig frd.mn
     1. responsible DNS:   dns2.iwelt-ag.net.
        resolved hostname: 82.196.7.61
     2. responsible DNS:   dns.iwelt-ag.net.
