@@ -47,6 +47,7 @@ dns=$(dig ns +short ${hostname})
 if [ -z "${dns}" ]
 then
 	echo "Error: Couldn't resolve hostname!"
+	exit 1
 fi
 
 # For each resulted server 
@@ -62,3 +63,4 @@ do
 	# Count
 	i=$((i+1))
 done
+exit 0
