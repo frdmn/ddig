@@ -8,7 +8,7 @@ Simple bash script to query each actual responsible DNS server directly for a sp
 
     cd /usr/local/src
     git clone git://github.com/frdmn/direct-dig.git
-    ln -s /usr/local/src/circular-dig/ddig /usr/bin/ddig
+    ln -s /usr/local/src/circular-dig/ddig /usr/local/bin/ddig
 
 ## Usage
 
