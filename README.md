@@ -1,16 +1,16 @@
-Direct dig (ddig)
-===================
+# direct-dig
+
+[![Current tag](http://img.shields.io/github/tag/frdmn/direct-dig.svg)](https://github.com/frdmn/direct-dig/tags) [![Repository issues](http://issuestats.com/github/frdmn/direct-dig/badge/issue)](http://issuestats.com/github/frdmn/direct-dig) [![Flattr this repository](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=frdmn&url=https://github.com/frdmn/direct-dig)
 
 Simple bash script to query each actual responsible DNS server directly for a specific domain/hostname.
 
-# Installation
+## Installation
 
     cd /usr/local/src
     git clone git://github.com/frdmn/direct-dig.git
     ln -s /usr/local/src/circular-dig/ddig /usr/bin/ddig
-    sudo chmod +x /usr/bin/ddig
 
-# Usage
+## Usage
 
     $ ddig frd.mn
     1. responsible DNS:   dns2.iwelt-ag.net.
@@ -40,6 +40,20 @@ instead of
 ---
     
     $ dig +short frd.mn @dns.iwelt-ag.net.
-    82.196.7.61## License
+    82.196.7.61
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch: `git checkout -b feature/my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/my-new-feature`
+5. Submit a pull request
+
+## Version
+
+1.0.0
+
+## License
 
 [MIT](LICENSE)
