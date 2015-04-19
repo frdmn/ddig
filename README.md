@@ -40,4 +40,6 @@ instead of
 ---
     
     $ dig +short frd.mn @dns.iwelt-ag.net.
-    82.196.7.61
+    82.196.7.61## License
+
+[MIT](LICENSE)
