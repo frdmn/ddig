@@ -1,14 +1,13 @@
-# direct-dig
+# ddig
 
-[![Current tag](http://img.shields.io/github/tag/frdmn/direct-dig.svg)](https://github.com/frdmn/direct-dig/tags) [![Repository issues](http://issuestats.com/github/frdmn/direct-dig/badge/issue)](http://issuestats.com/github/frdmn/direct-dig) [![Flattr this repository](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=frdmn&url=https://github.com/frdmn/direct-dig)
+[![Current tag](http://img.shields.io/github/tag/frdmn/ddig.svg)](https://github.com/frdmn/ddig/tags) [![Repository issues](http://issuestats.com/github/frdmn/ddig/badge/issue)](http://issuestats.com/github/frdmn/ddig) [![Flattr this repository](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=frdmn&url=https://github.com/frdmn/ddig)
 
 Simple bash script to query each actual responsible DNS server directly for a specific domain/hostname.
 
 ## Installation
 
-    cd /usr/local/src
-    git clone git://github.com/frdmn/direct-dig.git
-    ln -s /usr/local/src/circular-dig/ddig /usr/local/bin/ddig
+    brew tap frdmn/homebrew-formulas
+    brew install ddig
 
 ## Usage
 
@@ -52,7 +51,7 @@ instead of
 
 ## Version
 
-1.0.0
+1.1.0
 
 ## License
 
