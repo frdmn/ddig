@@ -51,16 +51,17 @@ then
 fi
 
 # For each resulted server
-for server in ${dns}
-do
+for server in ${dns}; do
   echo "$i. responsible name server:   ${server}"
 
     # Lookup PTR
     direct=$(dig ${hostname} +short @${server} | tr '\n' ' ')
 
-    echo "   resolved DNS: ${direct}"
+    echo "   directly resolved:         ${direct}"
 
   # Count
   i=$((i+1))
 done
+
+# Exit without any errors
 exit 0

@@ -12,12 +12,10 @@ Simple bash script to query each actual responsible DNS server directly for a sp
 ## Usage
 
     $ ddig frd.mn
-    1. responsible DNS:   dns2.iwelt-ag.net.
-       resolved hostname: 82.196.7.61
-    2. responsible DNS:   dns.iwelt-ag.net.
-       resolved hostname: 82.196.7.61
-    3. responsible DNS:   dns3.iwelt-ag.de.
-       resolved hostname: 82.196.7.61    
+    1. responsible name server:   andy.ns.cloudflare.com.
+       directly resolved:         104.31.66.66 104.31.67.66
+    2. responsible name server:   gail.ns.cloudflare.com.
+       directly resolved:         104.31.67.66 104.31.66.66   
 
 instead of
 
